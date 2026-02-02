@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketingPro • Formation Pratique Marketing Digital 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #FF6B35;
+            --dark: #0F172A;
+            --gray: #64748B;
+            --light-gray: #F1F5F9;
+            --white: #FFFFFF;
+            --success: #10B981;
+            --gradient: linear-gradient(135deg, #0066FF 0%, #00C6FF 100%);
+            --gradient-warm: linear-gradient(135deg, #FF6B35 0%, #FFB84D 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 102, 255, 0.1);
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .logo-text { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--dark); }
+        .logo-accent { font-family: 'DM Serif Display', serif; font-size: 28px; font-style: italic; color: var(--primary); }
+
+        /* Hero */
+        .hero { padding: 80px 0 40px; text-align: center; background: #F8FAFC; }
+        .hero-title { font-family: 'DM Serif Display', serif; font-size: 48px; margin-bottom: 16px; }
+        .hero-subtitle { font-size: 18px; color: var(--gray); max-width: 600px; margin: 0 auto; }
+
+        /* Grid */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 50px 0;
+        }
+
+        .module-card {
+            background: white;
+            border: 2px solid var(--light-gray);
+            border-radius: 20px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .module-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 12px 40px rgba(0,102,255,0.12);
+        }
+
+        .module-number {
+            width: 40px; height: 40px; 
+            background: var(--primary); color: white;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 10px; font-weight: bold; font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .module-title { font-family: 'DM Serif Display', serif; font-size: 22px; margin-bottom: 8px; }
+        .module-description { color: var(--gray); font-size: 15px; }
+
+        .note { text-align: center; padding: 40px 0; color: var(--gray); font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">Marketing</span><span class="logo-accent">Pro</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Tes modules de formation 2026</h1>
+            <p class="hero-subtitle">Clique sur une carte pour ouvrir la vidéo YouTube → tutos mis à jour et ultra-complets pour maîtriser le marketing digital cette année !</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="modules-grid">
+            
+            <a href="https://www.youtube.com/watch?v=Oe5-42PqOdg" target="_blank" rel="noopener noreferrer" class="module-card">
+                <div class="module-number">1</div>
+                <h3 class="module-title">Google Analytics 4</h3>
+                <p class="module-description">Tout comprendre et bien utiliser GA4 en 2026 : installation, interface, rapports essentiels et tracking avancé.</p>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=D8jkrXHsu4k" target="_blank" rel="noopener noreferrer" class="module-card">
+                <div class="module-number">2</div>
+                <h3 class="module-title">Meta Ads (Facebook/Insta)</h3>
+                <p class="module-description">Lancer tes premières pubs rentables étape par étape en 2026 (boost post, campagnes complètes, Andromeda update).</p>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=LNpS_Z6bNDM" target="_blank" rel="noopener noreferrer" class="module-card">
+                <div class="module-number">3</div>
+                <h3 class="module-title">Google Ads</h3>
+                <p class="module-description">Créer une campagne Search de A à Z en 2026 : mots-clés, enchères, extensions et optimisation pour dominer Google.</p>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=FIKpcA-A9Sk" target="_blank" rel="noopener noreferrer" class="module-card">
+                <div class="module-number">4</div>
+                <h3 class="module-title">SEO Basics</h3>
+                <p class="module-description">Le guide complet du SEO en 2026 pour débutants : bases, on-page, technique et stratégie pour ranker naturellement.</p>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=cYxVPlvps_M" target="_blank" rel="noopener noreferrer" class="module-card">
+                <div class="module-number">5</div>
+                <h3 class="module-title">Email Marketing</h3>
+                <p class="module-description">Guide 2026 ultra-complet : créer des flows qui vendent, automation, copywriting et conformité RGPD/GDPR.</p>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=OxY31qrFkLw" target="_blank" rel="noopener noreferrer" class="module-card">
+                <div class="module-number">6</div>
+                <h3 class="module-title">Canva Design</h3>
+                <p class="module-description">Maîtrise Canva de A à Z en 2026 : interface, astuces pro, templates, IA et création de visuels marketing rapides.</p>
+            </a>
+
+        </div>
+
+        <div class="note">
+            <p>Les vidéos sont sélectionnées parmi les plus récentes et qualitatives en 2026. YouTube peut parfois rendre des vidéos privées : si un lien ne marche plus, dis-le-moi pour que je l'actualise ! 🚀</p>
+        </div>
+    </section>
+
+</body>
+</html>
